@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login | ภูพระบาท</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+
+    body {
+        margin: 0;
+        height: 100vh;
+        background: linear-gradient(135deg, #1fa2ff, #12d8fa, #a6ffcb);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-card {
+        width: 90%;
+        max-width: 360px;
+        background: white;
+        border-radius: 25px;
+        padding: 30px 25px;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+        text-align: center;
+        animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 15px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #2e8b57, #a8e6cf);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    h2 {
+        margin: 10px 0 5px;
+        color: #2e8b57;
+    }
+
+    p {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 25px;
+    }
+
+    input {
+        width: 100%;
+        padding: 14px;
+        margin-bottom: 15px;
+        border-radius: 30px;
+        border: 1px solid #ddd;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    input:focus {
+        outline: none;
+        border-color: #2e8b57;
+    }
+
+    button {
+        width: 100%;
+        padding: 14px;
+        border: none;
+        border-radius: 30px;
+        background: linear-gradient(135deg, #2e8b57, #66cdaa);
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+
+    button:hover {
+        opacity: 0.9;
+    }
+
+    .extra {
+        margin-top: 15px;
+        font-size: 13px;
+    }
+
+    .extra a {
+        color: #2e8b57;
+        text-decoration: none;
+        font-weight: bold;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="login-card">
+    <div class="logo">PB</div>
+
+    <h2>เข้าสู่ระบบ</h2>
+    <p>แอปแนะนำแหล่งมรดกโลกภูพระบาท</p>
+
+    <input type="text" placeholder="ชื่อผู้ใช้">
+    <input type="password" placeholder="รหัสผ่าน">
+
+    <button onclick="location.href='home.html'">
+        เข้าสู่ระบบ
+    </button>
+
+    <div class="extra">
+        ยังไม่มีบัญชี? <a href="#">สมัครสมาชิก</a>
+    </div>
+</div>
+
+</body>
+</html>

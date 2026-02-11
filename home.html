@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>หน้าแรก | ภูพระบาท</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+
+    body {
+        margin: 0;
+        background: #f4f6f5;
+    }
+
+    /* ===== App Header ===== */
+    .app-header {
+        background: linear-gradient(135deg, #2e8b57, #66cdaa);
+        color: white;
+        padding: 25px 20px;
+        border-radius: 0 0 30px 30px;
+    }
+
+    .app-header h1 {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .app-header p {
+        margin-top: 5px;
+        font-size: 14px;
+        opacity: 0.95;
+    }
+
+    /* ===== Main Menu ===== */
+    .menu {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-top: -30px;
+    }
+
+    .menu-card {
+        background: white;
+        border-radius: 22px;
+        padding: 20px 10px;
+        text-align: center;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        transition: transform 0.2s;
+    }
+
+    .menu-card:hover {
+        transform: translateY(-6px);
+    }
+
+    .icon {
+        width: 55px;
+        height: 55px;
+        margin: 0 auto 10px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #1fa2ff, #12d8fa);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 26px;
+    }
+
+    .menu-card h3 {
+        font-size: 15px;
+        margin: 0;
+        color: #2e8b57;
+    }
+
+    /* ===== Highlight Section ===== */
+    .highlight {
+        margin: 20px;
+        background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+        border-radius: 25px;
+        padding: 20px;
+        color: #333;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .highlight h2 {
+        margin: 0 0 8px;
+        font-size: 20px;
+    }
+
+    .highlight p {
+        font-size: 14px;
+    }
+
+    /* ===== Bottom Nav ===== */
+    .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: white;
+        display: flex;
+        border-top: 1px solid #ddd;
+    }
+
+    .bottom-nav a {
+        flex: 1;
+        padding: 10px 0;
+        text-align: center;
+        text-decoration: none;
+        font-size: 12px;
+        color: #666;
+    }
+
+    .bottom-nav a.active {
+        color: #2e8b57;
+        font-weight: bold;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="app-header">
+    <h1>ภูพระบาท มรดกโลก</h1>
+    <p>Phu Phrabat World Heritage</p>
+</div>
+
+<div class="menu">
+    <a href="history.html" class="menu-card">
+        <div class="icon">📜</div>
+        <h3>ประวัติ</h3>
+    </a>
+
+    <a href="https://maps.app.goo.gl/DKmHxr3bSPJ11xMc8" class="menu-card">
+        <div class="icon">🚌</div>
+        <h3>การเดินทาง</h3>
+    </a>
+
+    <a href="gallery.html" class="menu-card">
+        <div class="icon">📸</div>
+        <h3>รูปภาพ</h3>
+    </a>
+
+    <a href="map.html" class="menu-card">
+        <div class="icon">🗺️</div>
+        <h3>แผนที่</h3>
+    </a>
+</div>
+
+<div class="highlight">
+    <h2>🌿 แหล่งมรดกโลกของไทย</h2>
+    <p>
+        เรียนรู้ประวัติศาสตร์ วัฒนธรรม  
+        และสถานที่สำคัญของภูพระบาท
+        ผ่านแอปพลิเคชันนี้
+    </p>
+</div>
+
+<div class="bottom-nav">
+    <a href="home.html" class="active">หน้าแรก</a>
+    <a href="gallery.html">รูปภาพ</a>
+    <a href="map.html">แผนที่</a>
+    <a href="contact.html">ติดต่อ</a>
+    <a href="https://maps.app.goo.gl/DKmHxr3bSPJ11xMc8">การเดินทาง</a>
+</div>
+
+</body>
+</html>

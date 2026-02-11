@@ -1,0 +1,145 @@
+/* ===== ตั้งค่าพื้นฐาน ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, #e0f7fa, #ffffff);
+    color: #2c3e50;
+}
+
+/* ===== Header ===== */
+.header {
+    background: linear-gradient(135deg, #00bcd4, #009688);
+    color: #fff;
+    text-align: center;
+    padding: 25px 10px;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.header h1 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.header p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    margin: 20px;
+    background: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.hero img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.hero-text {
+    padding: 20px;
+}
+
+.hero-text h2 {
+    color: #009688;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* ===== Menu ===== */
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.menu-card {
+    background: linear-gradient(135deg, #ffffff, #f1f8e9);
+    border-radius: 20px;
+    padding: 20px 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #2c3e50;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    transition: all 0.3s ease;
+}
+
+.menu-card span {
+    font-size: 32px;
+}
+
+.menu-card p {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.menu-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    background: linear-gradient(135deg, #00bcd4, #4caf50);
+    color: #fff;
+}
+
+/* ===== ปุ่ม ===== */
+.btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff9800, #ffc107);
+    color: #fff;
+    padding: 12px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #ffa726, #ffca28);
+}
+
+/* ===== Gallery ===== */
+.gallery {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* ===== Footer ===== */
+.footer {
+    margin-top: 30px;
+    background: #009688;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 25px 25px 0 0;
+    font-size: 14px;
+}
